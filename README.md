@@ -1,2 +1,2 @@
 # Priyanshu
-Priyanshu Portfolio Eureka!
+Priyanshu Portfolio Eureka GG!
