@@ -1,5 +1,6 @@
-name: Test Workflow
+# This is a basic workflow to help you get started with Actions
 
+name: Test Workflow
 on:
   push:
     branches:
@@ -8,8 +9,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run a one-liner script
-        run: echo "This is a test!"
+        run: echo "Hello, world!"
