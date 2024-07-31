@@ -40,10 +40,10 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install release-it
-        run: npm install -g release-it
+      - name: Install dependencies
+        run: npm install release-it
 
       - name: Create release notes and tag
-        run: release-it
+        run: npx release-it
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
