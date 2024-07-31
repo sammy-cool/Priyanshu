@@ -1,0 +1,10 @@
+{
+    "github": {
+      "release": true
+    },
+    "git": {
+      "tag": true,
+      "tagName": "v${version}"
+    }
+  }
+  
