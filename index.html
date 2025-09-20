@@ -34,6 +34,8 @@
     <link href="assets/css/components.css" rel="stylesheet">
     <link href="assets/css/style-new.css" rel="stylesheet">
 
+    <!-- Personalized Toast Script Load-->
+    <script src="https://cdn.jsdelivr.net/npm/customizable-toast-notification"></script>
 </head>
 
 <body data-barba="wrapper">
@@ -726,6 +728,29 @@
 
     <script src="assets/js/locomotive-scroll.min.js"></script>
     <script defer src="assets/js/index-new.js"></script>
+
+    <!-- Personalized Toast -->
+    <script>
+        setTimeout(function () {
+            
+        if (window.document.readyState === "complete" && window.customizableToast) {
+            customizableToast.createToast({
+                position: 'top-center',
+                message: `Hi, I'm Priyanshu welcome to my website! "😎" Pls Explore...`,
+                backgroundColor: 'snow',
+                duration: 5000,
+                animationDuration: '1.5s',
+                cta: {
+                    label: "Check Pkg!",
+                    href: "https://cdn.jsdelivr.net/npm/customizable-toast-notification",
+                    variant: "link",
+                    target: "_blank"
+                }
+            })
+        }
+        }, 2000);
+
+    </script>
 </body>
 
 </html>
