@@ -150,14 +150,16 @@
                             </a>
                         </li>
                         <li class="btn btn-link">
-                            <a href="./about.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                            <a href="./about.html" class="btn-click magnetic" data-strength="24"
+                                data-strength-text="12">
                                 <span class="btn-text">
                                     <span class="btn-text-inner">About</span>
                                 </span>
                             </a>
                         </li>
                         <li class="btn btn-link">
-                            <a href="./contact.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                            <a href="./contact.html" class="btn-click magnetic" data-strength="24"
+                                data-strength-text="12">
                                 <span class="btn-text">
                                     <span class="btn-text-inner">Contact</span>
                                 </span>
@@ -671,7 +673,9 @@
                         <div class="flex-col">
                             <div class="credits">
                                 <h5>Version</h5>
-                                <p>2023 © Edition</p>
+                                <p th:text="${startYear} + ' – ' + ${currentYear} + ' © Edition'">
+                                    2019 – 2025 © Edition
+                                </p>
                             </div>
                             <div class="time">
                                 <h5>Local time</h5>
@@ -741,8 +745,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
 
-    <script src="assets/js/locomotive-scroll.min.js"></script>
-    <script defer src="assets/js/index-new.js"></script>
+    <script src="./assets/js/locomotive-scroll.min.js"></script>
+    <script defer src="./assets/js/index-new.js"></script>
 
     <!-- Personalized Toast library -->
     <script>

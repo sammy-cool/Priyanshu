@@ -274,7 +274,8 @@
                         <p data-scroll data-scroll-speed="-1" data-scroll-position="top" data-scroll-offset="0%, -50%">
                             <span style="opacity: .5; display: block; padding-top: .5em;">Always exploring<span
                                     class="animate-dot">.</span><span class="animate-dot">.</span><span
-                                    class="animate-dot">.</span></span></p>
+                                    class="animate-dot">.</span></span>
+                        </p>
                     </div>
                     <div class="flex-col">
                         <div class="single-about-image">
@@ -444,7 +445,9 @@
                         <div class="flex-col">
                             <div class="credits">
                                 <h5>Version</h5>
-                                <p>2022 © Edition</p>
+                                <p th:text="${startYear} + ' – ' + ${currentYear} + ' © Edition'">
+                                    2019 – 2025 © Edition
+                                </p>
                             </div>
                             <div class="time">
                                 <h5>Local time</h5>
@@ -505,8 +508,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
 
-    <script src="assets/js/locomotive-scroll.min.js"></script>
-    <script defer src="assets/js/index-new.js"></script>
+    <script src="./assets/js/locomotive-scroll.min.js"></script>
+    <script defer src="./assets/js/index-new.js"></script>
 </body>
 
 </html>
